@@ -134,7 +134,7 @@ async function configureClientB_and_SignIn() {
  */
 async function forceRefresh() {
   logMsg('Attempting forceRefresh...');
-  logMsg('Open your Network tab to see the "InitiateAuth" request.');
+  logMsg('Open your Network tab to see the "GetTokensFromRefreshToken" request.');
   try {
     const session = await fetchAuthSession({ forceRefresh: true });
     if (session.tokens?.accessToken) {
